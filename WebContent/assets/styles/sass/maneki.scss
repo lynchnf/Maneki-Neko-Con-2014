@@ -1,0 +1,236 @@
+/**
+  * @Document:     maneki.css
+  * @Version:      1.2.3
+  * @Client:       Maneki Neko Con
+  * @Author:       Dave Edwards <david@savvyinet.com>
+  **/
+
+/**************************************************************
+ * # CONTENTS:
+ *
+ * - DEFAULTS...........Import resets and defines global functions, variables, and mixins.
+ * - COLORPALETTE.......Import branding color scheme, or define common color variables.
+ * - TYPOGRAPHY.........Import font face declarations, and define font stack variables.
+ * - APPEARANCE.........Define base styles for common visual elements, spacing, scale, font stack.
+ * - LAYOUT.............Page structural elements and positioning.
+ * - COMPONENTS.........Common generic underlying design patterns.
+ * - MODULES............Made from components and their extensions
+ *                      (e.g. "contact form", "homepage tiles", "product listing," etc.)
+ * - VARIANTS...........Style trumps, decorations
+ * - STATES.............Error states
+ *                      (e.g. isSelected,isActive,hasError,wasSuccessful, etc.)
+ *************************************************************/
+
+/**************************************************************
+# DEFAULTS
+ *************************************************************/
+
+//@mixin () {
+
+//}
+//
+
+/**************************************************************
+ * # COLORPALETTE
+ *
+ *  - default body text  #ffffcc
+ *  - subtitle h2 text   #ff9900
+ *  - form input borders #cc9933
+ *  - default p text     #f0f0f0
+ *  - pre borders        #ffff99
+ *
+ *   color: #A6A3D6;
+ *   color: #ADD86A;
+ *************************************************************/
+
+$bg-colr-0: rgba(96, 130, 180,1);  // Chetwode Blue
+$bg-colr-1: rgba(96, 130, 180, 1) ;
+$bg-colr-2: rgba(140, 159, 255, 1);
+$bg-colr-3: rgba(88, 82, 168, 1) ;
+$bg-colr-4: rgba(101, 32, 150, 1);
+$bg-colr-5: rgba(127, 66, 186,1);  // Deep Lilac
+
+/**************************************************************
+# TYPOGRAPHY
+ *************************************************************/
+/* FONTS
+  - default body text  Arial, Helvetica Neue, Helvetica, sans-serif
+  - subtitle h2 text   Garamond, Hoefler Text, Times New Roman, Times, serif
+  - form input text    Cambria, Georgia, Times, Times New Roman, Times, serif
+  - default p text     Copperplate Light, Copperplate Gothic Light, serif
+  - pre and code       Consolas, Lucida Console, Monaco, monospace
+*/
+//@import url("http://fonts.googleapis.com/css?family=Varela+Round|Open+Sans|Kaushan+Script");
+//@import url("../../fonts/anime_ace/stylesheet.css"); // "Anime Ace" font
+
+/**************************************************************
+# ELEMENTS
+ *************************************************************/
+
+html,
+body {
+  min-height: 100%;
+  padding: 0 1.5em 0 1.5em;
+  margin: 0;
+  font-family: "Varela Round","Open Sans","Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+
+body {
+  /* Old browsers */
+  background: rgb(96, 130, 180);
+  /* FF3.6+ */
+  background: -moz-linear-gradient(-45deg, rgba(96, 130, 180, 1) 1%, rgba(140, 159, 255, 1) 11%, rgba(88, 82, 168, 1) 37%, rgba(101, 32, 150, 1) 65%, rgba(127, 66, 186, 1) 96%);
+  /* Chrome,Safari4+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(1%, rgba(96, 130, 180, 1)), color-stop(11%, rgba(140, 159, 255, 1)), color-stop(37%, rgba(88, 82, 168, 1)), color-stop(65%, rgba(101, 32, 150, 1)), color-stop(96%, rgba(127, 66, 186, 1)));
+  /* Chrome10+,Safari5.1+ */
+  background: -webkit-linear-gradient(-45deg, rgba(96, 130, 180, 1) 1%, rgba(140, 159, 255, 1) 11%, rgba(88, 82, 168, 1) 37%, rgba(101, 32, 150, 1) 65%, rgba(127, 66, 186, 1) 96%);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(-45deg, rgba(96, 130, 180, 1) 1%, rgba(140, 159, 255, 1) 11%, rgba(88, 82, 168, 1) 37%, rgba(101, 32, 150, 1) 65%, rgba(127, 66, 186, 1) 96%);
+  /* IE10+ */
+  background: -ms-linear-gradient(-45deg, rgba(96, 130, 180, 1) 1%, rgba(140, 159, 255, 1) 11%, rgba(88, 82, 168, 1) 37%, rgba(101, 32, 150, 1) 65%, rgba(127, 66, 186, 1) 96%);
+  /* W3C */
+  background: linear-gradient(135deg, rgba(96, 130, 180, 1) 1%, rgba(140, 159, 255, 1) 11%, rgba(88, 82, 168, 1) 37%, rgba(101, 32, 150, 1) 65%, rgba(127, 66, 186, 1) 96%);
+
+
+  margin: 50px auto 0 auto;
+  background-repeat: no-repeat;
+  min-height: 90%;
+  position: relative;
+  overflow: scroll; // set to hidden for other form factors
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Anime Ace", script;
+}
+
+figure {
+  margin: 0 auto 0 auto;
+  width: 250px;
+}
+
+figcaption {
+  text-align: center;
+  margin: 0 auto 0 auto;
+  width: 250px;
+  font-style: italic;
+  font-size: 75%;
+}
+
+/**************************************************************
+# LAYOUTS
+ *************************************************************/
+
+/************************************************************
+  * Notes about grid:
+  * Columns:            12
+  * Grid Width:         825px
+  * Column Width:   55px
+  * Gutter Width:      15px
+  ************************************************************/
+
+
+/**************************************************************
+# OBJECTS
+ *************************************************************/
+
+.mn-common-header {
+}
+.mn-common-header h1 {
+  //font-family: "Kaushan Script", script;
+  font-family: "Anime Ace", script;
+  line-height: 100%;
+  margin-top: 2em;
+  font-size: 300%;
+  color: #fff;
+  font-weight: bold;
+  -webkit-text-stroke: 1px black;
+  color: white;
+  text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+.mn-feature h2 {
+  color: #564F8A;
+  font-size: 1.2em;
+  }
+.mn-feature h3 {
+  font-size: 1em;
+}
+.mn-common-header h4 {
+  //color: #ADD86A;
+  color: #564F8A;
+}
+
+.mn-share.ui.tumblr.button {
+  border-color:#2f4b66; //outer
+  background-color:#2c4762;
+  color: white;
+}
+
+.spacer {
+  visibility: hidden;
+}
+
+input:focus,
+select:focus {
+  border: thin black solid !important;
+  background-color: lightyellow !important;
+  color: black !important;
+}
+
+/**************************************************************
+# MODULES
+ *************************************************************/
+
+.content aside {
+  float:right;
+}
+
+.content a,
+.content a:visited,
+.content a:active,
+.content a:hover {
+  color: #201B53;
+  text-decoration: none;
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-spacing: 1px;
+}
+
+// external link indicator icon
+.content a[href^="http"]:not(.button):not(label):after,
+.content a[href^="http"]:active:not(.button):not(label):after,
+.content a[href^="http"]:visited:not(.button):not(label):after,
+.content a[href^="http"]:hover:not(.button):not(label):after {
+  font-family: Icons;
+  font-style: normal;
+  line-height: 1;
+  font-weight: 400;
+  text-decoration: inherit;
+  text-align: center;
+  speak: none;
+  content: "\f14c";
+  margin: 0 .04em 0 .04em;
+}
+.content a:hover {
+  color: #355D92;
+  border: 0;
+}
+.content p {
+  font-size: .8em;
+}
+/*Apply this class to some text to unlock the secrets of the third dimension!*/
+
+.mn-three-dee {
+  font-size: 200%;
+  text-shadow: 0 0 0 rgb(231, 231, 231), 1px 1px 0 rgb(216, 216, 216), 2px 2px 0 rgb(202, 202, 202), 3px 3px 0 rgb(187, 187, 187), 4px 4px 0 rgb(173, 173, 173), 5px 5px 0 rgb(158, 158, 158), 6px 6px 0 rgb(144, 144, 144), 7px 7px 6px rgba(0, 0, 0, 0.6), 7px 7px 1px rgba(0, 0, 0, 0.5), 0 0 6px rgba(0, 0, 0, .2);
+}
+
+sup.mn-os { //ordinal suffix
+  font-size: 50%;
+  vertial-align: top;
+  font-variant: small-caps;
+}

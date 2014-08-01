@@ -1,0 +1,13 @@
+/* maneki-legacy.css
+ *
+ * css for legacy internet explorer browsers.
+ */
+
+body  {
+   /* IE6-9 fallback on horizontal gradient */
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#6082b4', endColorstr='#7f42ba', GradientType=1);
+}
+
+.rounded {
+    behavior: url(//cdnjs.cloudflare.com/ajax/libs/css3pie/2.0beta1/pie/PIE.htc);
+}
