@@ -198,3 +198,35 @@ sup.mn-os {
     vertial-align: top;
     font-variant: small-caps;
 }
+
+.image-left {
+    float: left;
+    margin-right: 10px;
+}
+
+#donations {
+    float: right;
+}
+
+#donations ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#donations input[type="image"] {
+    vertical-align: text-bottom;
+}
+
+#donations form {
+    display: inline-block;
+}
+
+.fine-print {
+    font-size: smaller;
+    font-style: italic;
+    margin-left: 1em;
+}
+
+.ui .form .field  input[type="image"] {
+    margin-top: 2em;
+}
