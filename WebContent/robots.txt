@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: /assets/
+Disallow: /awstats/
+Disallow: /cgi-bin/
+Disallow: /cp/
+Disallow: /images/
+Disallow: /webalizer/
+Disallow: /info.php
+Disallow: /test.html
