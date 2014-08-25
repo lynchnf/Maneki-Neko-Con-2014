@@ -230,3 +230,7 @@ sup.mn-os {
 .ui .form .field  input[type="image"] {
     margin-top: 2em;
 }
+
+.content p.big-content {
+    font-size: 1em;
+}
