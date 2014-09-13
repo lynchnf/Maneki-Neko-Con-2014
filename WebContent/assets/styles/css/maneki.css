@@ -234,3 +234,7 @@ sup.mn-os {
 .content p.big-content {
     font-size: 1em;
 }
+
+.clear-float {
+    clear: both;
+}
