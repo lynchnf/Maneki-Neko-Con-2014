@@ -8,3 +8,4 @@ Disallow: /images/
 Disallow: /webalizer/
 Disallow: /info.php
 Disallow: /test.html
+Disallow: /staff-only.html
