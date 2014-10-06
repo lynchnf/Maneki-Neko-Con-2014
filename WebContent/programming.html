@@ -60,36 +60,41 @@
             <a href="faq.html" class="item">FAQ</a>
         </nav>
         <main role="main" class="mn-common-main ui segment raised">
-        <section class="ui two column divided grid">
             <article class="mn-feature content column">
-                <p class="big-content">Here is a sampling of the the exciting panals you will find at Maneki Neko Con:</p>
-                <ul>
-                    <li>The Ultimate Marvel Panel</li>
-                    <li>Con Horror Story</li>
-                    <li>Anime Jeopardy</li>
-                    <li>Adaptations Across Countries</li>
-                    <li>Tokusatsu is AWESOME/weird</li>
-                    <li>Maneki Neko Book Club Discussion</li>
-                    <li>Connecting in the Furry Fandom: Cons, Meets, and more!</li>
-                    <li>Is It Kpoppin'?</li>
-                    <li>Cons 101</li>
-                    <li>Making the Hobby you LOVE into a career (GoH Panel)</li>
-                    <li>Where do you think Comics are going?</li>
-                    <li>Meet and Greet with O.T. Puente</li>
-                    <li>MoxXie's Nerd Love Panel!</li>
-                    <li>Lawyer Up! Legal Basics for Game Developers</li>
-                    <li>how to look like an art professional without really trying</li>
-                    <li>Book scupture and papercraft demo</li>
-                    <li>Reading with GoH Mary Ann Mohanraj</li>
-                    <li>Intro to writing and publishing</li>
-                    <li>Dark Souls Lore Comparison</li>
-                    <li>SPFX Make-up 101, Prop making 101</li>
-                    <li>Drawing Manga</li>
-                </ul>
-            </article>
-            <article class="mn-feature content column">
-                <iframe src="https://docs.google.com/forms/d/1GJJanjwOhq5Txujv7_yGDsWk-raQl2hMYeXjBmQ9ono/viewform?embedded=true" width="760" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-            </article>
+<p>Panel TIMES and LOCATION are subjec to change. If you do not see your panel send an email to programming@maneki-neko-con.org</p>
+<center style='overflow-x:scroll;'>
+<!--<iframe width="1100" height="555" frameborder="0" src="https://docs.google.com/spreadsheets/d/1-8SAOi_GlZEypBql5pUcEYyI8jrtnqgg4MQ3J076a3A/pubhtml?widget=true&amp;headers=false"></iframe>-->
+<link rel=Stylesheet href=stylesheet.css>
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+function loadSheet(sheetname){
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function(){
+    if (xmlhttp.readyState==4 && xmlhttp.status==200){
+      document.getElementById("spreadsheet").innerHTML=xmlhttp.responseText;
+    }
+  }
+  xmlhttp.open("GET",sheetname,true);
+  xmlhttp.send();
+}
+$(document).ready(loadSheet('sheet003.htm'))
+</script>
+
+<section id='sheetSel'>
+<button class='ssButton' onclick='loadSheet("sheet001.htm")'>Friday</button>
+<button class='ssButton' onclick='loadSheet("sheet002.htm")'>Saturday</button>
+<button class='ssButton' onclick='loadSheet("sheet003.htm")'>Sunday</button>
+</section>
+<div id='spreadsheet'>
+
+</div>
+</center>
+
+<center><iframe style='width:100%; max-width:1052px' height="1000" src="https://docs.google.com/spreadsheets/d/1gJ3U6RvpmaoKjfkGWRJtn-tZq0eREQqCPANQsME5TkA/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe></center>
+<!--divider-->
+
+<!--divider-->
+</article>
         </section>
         </main>
         <footer class="mn-common-footer"></footer>
